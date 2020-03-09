@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "fio": "Марина",
+    "image": "/img/master/master-1.jpg",
+    "description": "Женская стрижка",
+    "idsalon": 1
+  },
+  {
+    "id": 2,
+    "fio": "Виктория",
+    "image": "/img/master/master-2.jpg",
+    "description": "Сложная прическа",
+    "idsalon": 2
+  },
+  {
+    "id": 3,
+    "fio": "Жанна",
+    "image": "/img/master/master-3.jpg",
+    "description": "Плетение простое / сложное",
+    "idsalon": 2
+  },
+  {
+    "id": 4,
+    "fio": "Екатерина",
+    "image": "/img/master/master-4.jpg",
+    "description": "Коктейльная прическа",
+    "idsalon": 3
+  }
+]

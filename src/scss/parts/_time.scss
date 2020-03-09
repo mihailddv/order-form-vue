@@ -1,0 +1,96 @@
+.time {
+  &__container {
+    display: grid;
+    grid-gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__calendar {
+    margin-bottom: 20px;
+
+    .vdpPeriodControls {
+      .vdpPeriodControl {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+
+    input {
+      border: 1px solid #333;
+      border-radius: 3px;
+      height: 40px;
+      font-size: 20px;
+      padding-left: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__list {
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+  }
+
+  &__record {
+    @include flex-row;
+
+    padding: 5px;
+    text-align: center;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &-input {
+      display: none;
+    }
+
+    &-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    &--active {
+      background: $primary-color;
+      color: #fff;
+    }
+
+    &--disabled {
+      background: #ccc;
+      border-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  &__action {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@include tablets() {
+  .time {
+    &__container {
+      grid-template-columns: 400px 1fr;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.salons(v-if="isSalons")
+  .salons__content
+    .salon(
+      v-for="item in salonData.features"
+    )
+      .salon__pic
+        img(:src="item.image", :alt="item.name")
+
+      v-card-subtitle
+        .salon__address {{ item.address }}
+
+      v-card-text.salon__content.text--primary
+        .salon__worktime-title Время работы
+        ul.salon__worktime(v-for="time in item.time")
+          li.salon__time
+            span {{ time.day }}
+            span {{ time.worktime }}
+
+      v-card-actions
+        v-btn(
+          color="primary"
+          :data-salon-id="item.id"
+          @click="showWorkers"
+        ) Выбрать
+
+  .salons__map
+    .map#map

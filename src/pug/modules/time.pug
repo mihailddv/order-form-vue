@@ -1,0 +1,43 @@
+.time(
+  v-if="isTime"
+  v-for="item in filterMaster(workersData)"
+)
+  .time__container.container
+
+    .time__master
+      .master
+        .master__photo
+          img(:src="item.image", alt="")
+        .master__name {{ item.fio }}
+        .master__desc {{ item.description }}
+
+    .time__content
+      h2.time__title Выберите время записи
+
+      .time__calendar
+        date-pick(
+          v-model="date"
+          :is-date-disabled="isFutureDate"
+          :weekdays="calendar.weekdays"
+          :months="calendar.months"
+        )
+
+      .time__list(
+        v-if="calendar.isRecordTime"
+      )
+        .time__record(
+            v-for="time in timeData"
+          )
+          input.time__record-input(
+            type="checkbox"
+            name="record-time"
+            :data-record-avialable="time.avialable"
+            :data-record-time="time.hour"
+          )
+          .time__record-text {{ time.hour }}
+
+      .time__action
+        v-btn(
+          color="primary"
+          @click="showContacts"
+        ) Выбрать

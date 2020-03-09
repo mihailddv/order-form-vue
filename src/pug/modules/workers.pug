@@ -1,0 +1,20 @@
+.workers(v-if="isWorkers")
+  .worker(
+    v-for="item in filterWorker(workersData)"
+    :data-master-id="item.id"
+  )
+    .worker__pic
+      img(:src="item.image", :alt="item.fio")
+
+    v-card-subtitle
+      h2.worker__name {{ item.fio }}
+
+    v-card-text
+      h4.worker__desc {{ item.description }}
+
+    v-card-actions
+      v-btn(
+        color="primary"
+        :data-salon-id="item.id"
+        @click="showTime"
+      ) Выбрать

@@ -1,0 +1,34 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	#app
+
+		v-app.order#order
+			.container(v-cloak)
+
+				.order__request(
+					v-if="order.request" 
+				)
+
+					.order__caption
+						.order__title Всего 4 шага до записи
+						.order__steps
+							include modules/steps
+
+					.loader(v-if="isLoading") Загрузка
+
+					.order__content
+
+						include modules/salons
+						include modules/workers
+						include modules/time
+						include modules/contacts
+
+				.order__success(
+					v-if="order.success" 
+				)
+					h2 Заявка отправлена!

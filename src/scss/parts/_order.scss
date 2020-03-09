@@ -1,0 +1,18 @@
+.order {
+  padding: 30px 0;
+
+  &__caption {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__success {
+    text-align: center;
+  }
+}

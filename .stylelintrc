@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "extends",
+        "extend",
+        "ignores",
+        "mixin",
+        "include"
+      ]
+    }],
+    "number-leading-zero": null,
+    "selector-pseudo-element-colon-notation": "single",
+    "no-missing-end-of-source-newline": null,
+    "unit-whitelist": ["em", "rem", "s", "px", "%", "vh", "fr", "deg", "vh", "vw"],
+  }
+}

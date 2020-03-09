@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": 1,
+      "image": "/img/salon/salon-1.jpg",
+      "address": "пр. Косыгина, д. 26, к. 1",
+      "time": [
+        {
+          "day": "Будни",
+          "worktime": "9-17"
+        },
+        {
+          "day": "Вых.",
+          "worktime": "10-20"
+        }
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.945594, 30.486296
+        ]
+      },
+      "properties": {
+        "balloonContent": "пр. Косыгина, д. 26, к. 1",
+        "clusterCaption": "",
+        "hintContent": ""
+      }
+    },
+    {
+      "id": 2,
+      "image": "/img/salon/salon-2.jpg",
+      "address": "7 линия В. О., д. 34",
+      "time": [
+        {
+          "day": "Будни",
+          "worktime": "9-17"
+        },
+        {
+          "day": "Вых.",
+          "worktime": "10-20"
+        }
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.940993, 30.280097
+        ]
+      },
+      "properties": {
+        "balloonContent": "7 линия В. О., д. 34",
+        "clusterCaption": "",
+        "hintContent": ""
+      }
+    },
+    {
+      "id": 3,
+      "image": "/img/salon/salon-3.jpg",
+      "address": "ул. Восстания, д. 12",
+      "time": [
+        {
+          "day": "Будни",
+          "worktime": "9-17"
+        },
+        {
+          "day": "Вых.",
+          "worktime": "10-20"
+        }
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.936246, 30.360020
+        ]
+      },
+      "properties": {
+        "balloonContent": "ул. Восстания, д. 12",
+        "clusterCaption": "",
+        "hintContent": ""
+      }
+    }
+  ]
+}

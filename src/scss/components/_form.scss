@@ -1,0 +1,23 @@
+.form {
+  &-block {
+    margin-bottom: 20px;
+
+    &--error {
+      input {
+        border-color: red;
+      }
+    }
+  }
+
+  &-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 3px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

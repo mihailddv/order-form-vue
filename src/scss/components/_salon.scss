@@ -1,0 +1,60 @@
+.salon {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+
+  ul {
+    padding-left: 0;
+  }
+
+  &__pic {
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__worktime {
+    padding: 0;
+  }
+
+  &__time {
+    display: flex;
+    font-size: 14px;
+
+    span {
+      &:first-child {
+        width: 50px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__place {
+    @include flex-row;
+
+    &-icon {
+      width: 15px;
+      height: 15px;
+      fill: $primary-color;
+    }
+
+    &-text {
+      padding-top: 3px;
+      font-size: 12px;
+    }
+  }
+}
+
+@include desktop() {
+  .salon {
+    margin: 0;
+    width: initial;
+  }
+}

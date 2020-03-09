@@ -1,0 +1,25 @@
+.contacts(
+  v-if="isContacts"
+)
+  .container
+    form.contacts__form
+      .form-block
+        .form-block__title Имя
+        input.form-input(
+          type="text"
+          data-input="name"
+          v-model="client.name"
+        )
+      .form-block
+        .form-block__title Телефон
+        input.form-input(
+          type="phone"
+          data-input="phone"
+          maxlength="11"
+          v-model="client.phone"
+        )
+      .form-action
+        v-btn(
+          color="primary"
+          @click="sendForm"
+        ) Записаться

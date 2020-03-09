@@ -1,0 +1,27 @@
+.steps
+  button.step(
+    @click="showStep(1)"
+  )
+    .step__icon 1
+    .step__text Выбор салона
+
+  button.step(
+    @click="showStep(2)"
+    :disabled="!steps.step2"
+  )
+    .step__icon 2
+    .step__text Выбор мастера
+
+  button.step(
+    @click="showStep(3)"
+    :disabled="!steps.step3"
+  )
+    .step__icon 3
+    .step__text Время записи
+
+  button.step(
+    @click="showStep(4)"
+    :disabled="!steps.step4"
+  )
+    .step__icon 4
+    .step__text Контакты
